@@ -1,4 +1,8 @@
-""" Various functions to perform analysis of flare star images from LCO."""
+""" Various functions to perform analysis of flare star images from LCO.
+
+Note: some functions need fine-tuning, and some may not yet be fully functional.
+
+"""
 import os
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
@@ -374,9 +378,4 @@ if __name__ == '__main__':
     # i.track_sway()
     # i.plot_centers_over_time()
 
-'''
-Things to add:
-- Find a way to implement 2d correlation to find stars more effectively. 
-- Implement 2x2 boxcar binning of images 
-- Pixel masks and stuff
-'''
+
