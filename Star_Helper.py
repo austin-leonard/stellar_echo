@@ -1,4 +1,6 @@
-"""Several functions to help determine stellar parameters mathematically from available data. """
+"""Several functions to help determine stellar parameters mathematically from limited available data. Also contains
+the Binary class, which determines the distance between two binary stars given period and mass
+"""
 import numpy as np
 from scipy import constants as c 
 import uncertainties
@@ -97,7 +99,7 @@ class Star:
         print("The mass of ", self.name, "is", mass, "Msun")
         return mass
 
-
+# Get the parameters of a star
 st = Star("gj 4198", 14.8, 13.19, 12.1665)
 temperature = st.get_temperature()
 mag = st.get_absolute_magnitude()
@@ -134,6 +136,6 @@ class Binary:
         print("The separation of ", self.name, "is", a, "AU")
         return a
 
-
+# Get the separation of a binary star
 pair = Binary("CM Dra", 1.27, 0.4368)
 sep = pair.semi_major_axis()
