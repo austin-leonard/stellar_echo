@@ -1,4 +1,4 @@
-""" Various functions to perform analysis of flare star images from LCO.
+""" Various functions to perform analysis of flare star images from Las Cumbres Observatory.
 
 Note: some functions need fine-tuning, and some may not yet be fully functional.
 
