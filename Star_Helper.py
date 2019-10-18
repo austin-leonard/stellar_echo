@@ -1,5 +1,6 @@
 """Several functions to help determine stellar parameters mathematically from limited available data. Also contains
-the Binary class, which determines the distance between two binary stars given period and mass
+the Binary class, which determines the distance between two binary stars given period and mass.
+Some functions use unorthodox methods to compensate for lack of parameters available.
 """
 import numpy as np
 from scipy import constants as c 
